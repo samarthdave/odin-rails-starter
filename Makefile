@@ -12,3 +12,6 @@ start:
 ## lsof -i -P -n | grep LISTEN
 # and stop them
 ## fuser -k 3000/tcp
+
+# create a Model with generator
+## bin/rails generate model Article title:string body:text
