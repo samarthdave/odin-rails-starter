@@ -1,7 +1,11 @@
+all: start
 
 start:
 	bin/rails server --port 8080
 	# should be able to visit http://127.0.0.1:8080/ bc VS Code is somehow forwarding the traffic from my local system... neat!
+
+console:
+	bin/rails console
 
 ## recent(ish) commands i'm running
 
