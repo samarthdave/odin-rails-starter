@@ -19,3 +19,6 @@ console:
 
 # create a Model with generator
 ## bin/rails generate model Article title:string body:text
+
+# comment model code
+# bin/rails generate model Comment commenter:string body:text article:references
