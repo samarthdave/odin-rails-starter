@@ -5,4 +5,17 @@
 
 <p><%= @article.body %></p>
 
-<%= link_to "edit this post", edit_article_path(@article) %>
+<ul>
+    <li>
+        <%= link_to "back to all articles", articles_path %>
+    </li>
+    <li>
+        <%= link_to "edit this post", edit_article_path(@article) %>
+    </li>
+    <li>
+        <%= link_to "delete this post", article_path(@article), data: {
+                    turbo_method: :delete,
+                    turbo_confirm: "Are you sure?"
+                  } %>
+    </li>
+</ul>
