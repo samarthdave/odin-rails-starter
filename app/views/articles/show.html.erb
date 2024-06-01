@@ -1,6 +1,8 @@
 
-<h1>Post Title:</h1>
-<h2><%= @article.title %></h2>
+<h1><%= @article.title %></h1>
 
-<h3>Post Body</h3>
+<hr />
+
 <p><%= @article.body %></p>
+
+<%= link_to "edit this post", edit_article_path(@article) %>
